@@ -1,0 +1,45 @@
+body{
+    background-color: #c4d3ca;
+    text-align: center;
+}
+#header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 2px;
+    height: 60px;
+    align-items: center;
+    box-shadow: 0 3px 6px black;
+    background-color: silver;
+}
+#header>div{
+    grid-column: 1/2;
+    width: auto;
+    height: 58px;
+}
+#header>h2 {
+    position: relative;
+    bottom: 50px;
+    grid-column: 2/3;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+}
+#nav-bar{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+}
+#nav-bar > li{
+    padding: 0 10px;
+    list-style: none;
+    font-size: 20px;
+}
+#nav-bar > li > a{
+    text-decoration: none;
+    color: black;
+}
