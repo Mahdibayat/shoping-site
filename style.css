@@ -1,45 +1,207 @@
 body{
-    background-color: #c4d3ca;
+    background-image: linear-gradient(135deg, white, #ffe0b3);
     text-align: center;
+}
+a{
+    text-decoration: #ffc20f;
+    color: orange;
+}
+a:hover{
+    color: tomato;
+    transition: 200ms;
+    transform: translateY(1px);
+    cursor: pointer;
 }
 #header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
     position: fixed;
     width: 100%;
+    height: auto;
     left: 0;
     top: 0;
-    padding: 2px;
-    height: 60px;
     align-items: center;
     box-shadow: 0 3px 6px black;
-    background-color: silver;
+    background-image: linear-gradient(45deg, #66ffff, orange, #ffff99);
+    text-align: center;
+    z-index: 2;
 }
-#header>div{
-    grid-column: 1/2;
-    width: auto;
-    height: 58px;
-}
+
 #header>h2 {
-    position: relative;
-    bottom: 50px;
-    grid-column: 2/3;
     justify-content: center;
     width: auto;
     height: auto;
     margin-top: 5px;
 }
-#nav-bar{
-    grid-column: 3/4;
+#head-logo{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 15px;
+}
+#Logo{
+    width: 100px;
+    height: 60px;
+}
+#profile{
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 5px
+}
+#head-logo>h2{
+    margin-left: 15px;
+}
+#nav-bar{
+    display: block;
+    justify-content: flex-end;
+    padding-right: 15px;
+    float: right;
 }
 #nav-bar > li{
-    padding: 0 10px;
     list-style: none;
-    font-size: 20px;
+    border-radius: 10px;
+}
+#nav-bar > li:hover{
+    transition: 400ms;
+    background-color: tomato;
+}
+#nav-bar > li:active{
+    background-color: darkorange;
+    transform: scale(0.9);
 }
 #nav-bar > li > a{
+    margin-right: 1rem;
     text-decoration: none;
     color: black;
+    padding-left: 15px;
+}
+                                  /*end header and begin main*/
+#form{
+    margin-top:20px;
+}
+#main{
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+#main > div{
+    display: flex;
+}
+#email{
+    position: relative;
+    bottom: 15px;
+    width: 250px;
+    height: 20px;
+    border: solid 1px black;
+    border-radius: 2px;
+    outline: darkorange;
+    text-align: center;
+    box-shadow: 2px 2px 5px black;
+}
+.kala-btn{
+    position: relative;
+    width: 110px;
+    height: 40px;
+    background-color: #ffb809;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 2px 2px 5px black;
+
+}
+.kala-btn:hover{
+    transition: 300ms;
+    background-color: darkorange;
+}
+.kala-btn:active{
+    transition: 100ms;
+    transform: scale(0.97);
+    box-shadow: 0 0 5px white;
+}
+#main >div{
+    min-width: 400px;
+    max-width: 800px;
+    margin: 20px auto 10px auto;
+    text-decoration: #ffc20f;
+}
+.content{
+    text-align: right;
+}
+.content-img{
+    width: 90px;
+    height: 90px;
+    margin-left: 15px;
+    position: relative;
+    top: 20px;
+}
+#video{
+    width: 500px;
+    height: 300px;
+    margin: 50px auto 90px auto;
+    border: solid 5px darkorange;
+    box-shadow: 2px 2px 5px black;
+}
+#section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    padding: 0 15px;
+}
+.section-div{
+    border: solid 2px black;
+    width: 300px;
+    height: 350px;
+    z-index: 1;
+    padding: 10px 10px;
+    text-align: center;
+    margin: 10px auto;
+}
+#footer{
+    background-image: linear-gradient(40deg, #000099, Black, #660000);
+    color: orange;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: grid;
+    padding: 5px;
+    grid-template-columns: 1fr minmax(150px,1fr) 1fr ;
+    grid-gap: 20px;
+}
+#footer > div {
+    display: flex;
+
+}
+#footer > div > h3{
+    margin: auto;
+}
+#design{
+    width: 30px;
+}
+#author:hover{
+    transition: 200ms;
+    transform: translateY(1px);
+}
+
+#connect{
+    flex-direction: column;
+    text-align: right;
+    margin-right: 15px;
+}
+#connect > a:hover{
+    transition: 200ms;
+    color: lightgoldenrodyellow;
+}
+#place{
+    text-align: left;
+}
+@media (max-width:710px) {
+    #header{
+        display: flex;
+    }
+}
+#prof{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
 }
