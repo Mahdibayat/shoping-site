@@ -1,6 +1,6 @@
-<!DOCTYPE html>
 <html lang="fa">
 <head>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
     <meta charset="UTF-8">
     <title>shop center</title>
     <link rel="stylesheet" href="style.css" />
@@ -8,7 +8,7 @@
 <body>
 <header id="header">
     <div id="head-logo">
-        <img id="Logo" src="http://uupload.ir/files/ooo5_6321362.png" alt="Logo" />
+        <img id="header-img" src="http://s5.picofile.com/file/8396546618/6423921.png" alt="Logo" />
         <div id="prof">
             <a href="#"><img id="profile" src="https://img.icons8.com/ios-filled/60/000000/name.png" alt="profile" /></a>
         </div>
@@ -16,20 +16,20 @@
     <div id="titr">
         <h2>فروشگاه اینترنتی</h2>
     </div>
-    <div>
-        <ul id="nav-bar">
-            <li><a href="#section">فروش ویژه</a></li>
-            <li><a href="#main">اطلاعات</a></li>
-            <li><a href="#connect">تماس با ما</a></li>
+    <nav id="nav-bar">
+        <ul id="nav-barr">
+            <li><a href="#section" class='nav-link'>فروش ویژه</a></li>
+            <li><a href="#main" class='nav-link'>اطلاعات</a></li>
+            <li><a href="#connect" class='nav-link'>تماس با ما</a></li>
         </ul>
-    </div>
+    </nav>
 </header>
                         <!-- پایان هدینگ و آغاز محتوا اصلی -->
 <main id="main">
     <form id="form" action="https://www.freecodecamp.com/email-submit">
         <h1>ثبت نام سریع و آسان</h1>
-        <input required type="email" id="email" placeholder="ایمیل خود را وارد کنید" /><br />
-        <input type="submit" class="kala-btn" value="ثبت نام" >
+        <input required type="email" name="email" id="email" placeholder="ایمیل خود را وارد کنید" /><br />
+        <input type="submit" class="kala-btn" value="ثبت نام" id="submit" />
     </form>
     <div>
         <div class="content">
@@ -41,7 +41,7 @@
     <div>
         <div class="content">
             <h1>تحویل سریع و آسان</h1>
-            <p>تحویل در سطح شهر مشهد بصورت آنی با امکان پرداخت در درب منزل، تحویل در سایر نقاط کشور در صورت دسیدن به حد نساب هزینه پست رایگان میباشد</p>
+            <p>تحویل در سطح شهر مشهد بصورت آنی با امکان پرداخت در درب منزل، تحویل در سایر نقاط کشور در صورت دسیدن به حد نصاب هزینه پست رایگان میباشد</p>
         </div>
         <img class="content-img" src="https://img.icons8.com/cotton/60/000000/document-delivery.png" alt="logo"/>
     </div>
@@ -52,7 +52,7 @@
         </div>
         <img class="content-img" src="https://img.icons8.com/dusk/60/000000/safe-ok.png" alt="logo"/>
     </div>
-    <iframe id="video" frameborder="0" allowfullscreen src="https://www.aparat.com/video/video/embed/videohash/0GBPM/vt/frame"></iframe>
+    <iframe id="video" frameborder="0" allowfullscreen src="https://www.aparat.com/video/video/embed/videohash/3T5os/vt/frame"></iframe>
 </main><hr />
 <section id="section">
     <div class="section-div">

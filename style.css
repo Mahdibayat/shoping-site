@@ -41,9 +41,9 @@ a:hover{
     justify-content: flex-start;
     padding-left: 15px;
 }
-#Logo{
-    width: 100px;
-    height: 60px;
+#header-img{
+    width: 170px;
+    height: 80px;
 }
 #profile{
     margin-left: 20px;
@@ -55,25 +55,25 @@ a:hover{
 #head-logo>h2{
     margin-left: 15px;
 }
-#nav-bar{
+#nav-barr{
     display: block;
     justify-content: flex-end;
     padding-right: 15px;
     float: right;
 }
-#nav-bar > li{
+#nav-barr > li{
     list-style: none;
     border-radius: 10px;
 }
-#nav-bar > li:hover{
+#nav-barr > li:hover{
     transition: 400ms;
     background-color: tomato;
 }
-#nav-bar > li:active{
+#nav-barr > li:active{
     background-color: darkorange;
     transform: scale(0.9);
 }
-#nav-bar > li > a{
+#nav-barr > li > a{
     margin-right: 1rem;
     text-decoration: none;
     color: black;
@@ -213,5 +213,4 @@ a:hover{
     padding: 20px 5px;
     background-color: cadetblue;
     height: 30px;
-
 }
